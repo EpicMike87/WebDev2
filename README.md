@@ -1,4 +1,10 @@
-In order to download and use the code examples provided you should clone the repository. 
-Assumimg you have Git installed on your computer (see https://github.com/git-guides/install-git) open a terminal window in Visual Studio Code ( or use a terminal window provided by your operating system). Type the following command to download the project from a remote server to the folder you are currently in locally
-git clone https://github.com/FionaMacRaeFairlie/WAD2Lab8.git
-Use cd to move to the root directory of the cloned project, npm install to get the node dependancies set up then run the project by typing node index.
+In order to run the site, open the project folder in an application such as Visual Studio code and run 'node index' in the terminal.
+
+The site has the following features:
+
+A navigation panel that allows quick access to all sections of the site.
+An About page explaining the purpose of the site.
+Various content pages on a variety of subjects related to health and wellbeing. (Fitness, Nutrition and Sleep)
+Full registration and authentication support. The user will be required to register an account and log in to access most of the site’s features. The user must agree to the site’s terms and conditions in order to register.
+A user profile page.
+A goals page which allows the use to create wellbeing goals to improve their health and view a list of the created goals for reference.
