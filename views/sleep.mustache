@@ -1,0 +1,59 @@
+<html>
+    <head>  
+        {{>header}}
+        <script defer src="javascript/expandbox.js"></script>
+    </head>
+    <body>
+    <section class="gridcontainer">
+        <h1>{{title}}</h1>
+        <br></br>
+            {{>navigation}}
+        <div class="mainDiv">
+        <h1> Sleep <img alt="logo" src="images/night-sleeping-icon.png" class = "headingIcon"></h1>
+<div class ="textBox">
+During sleep, your body is working to support healthy brain function and maintain your physical health. Click the options below to find
+out more on how sleep impacts your wellness goals.
+<br> </br>
+
+<div class = "window-container" id="window-container-1">
+  <button class="close-window">&times;</button>
+  <h1>Healthy Brain <img alt="logo" src="images/mind-icon.png" class = "headingIcon"></h1>
+  <p>{{> information/sleepbrain}}</p>
+</div>
+
+<div class = "window-container" id="window-container-2">
+  <button class="close-window">&times;</button>
+  <h1>Healthy Body <img alt="logo" src="images/body-check-up-icon.png" class = "headingIcon"></h1>
+  <p>{{> information/sleepbody}}</p>
+</div>
+
+<div class = "window-container" id="window-container-3">
+  <button class="close-window">&times;</button>
+  <h1>Sleep Regularity <img alt="logo" src="images/clock-timing-icon.png" class = "headingIcon"></h1>
+  <p>{{> information/goodsleep}}</p>
+</div>
+
+<div class = "window-container" id="window-container-4">
+  <button class="close-window">&times;</button>
+  <h1>Sleep Tips <img alt="logo" src="images/ideas-icon.png" class = "headingIcon"></h1>
+  <p>{{> information/sleeptips}}</p>
+</div>
+
+<a class="show-window" href="#window-container-1">Healthy Brain <img alt="logo" src="images/mind-icon.png" class = "buttonIcon"></a>
+<a class="show-window" href="#window-container-2">Healthy Body <img alt="logo" src="images/body-check-up-icon.png" class = "buttonIcon"></a>
+<a class="show-window" href="#window-container-3">Sleep Regularity <img alt="logo" src="images/clock-timing-icon.png" class = "buttonIcon"></a>
+<a class="show-window" href="#window-container-4">Sleep Tips <img alt="logo" src="images/ideas-icon.png" class = "buttonIcon"></a>
+
+
+</div>
+
+
+    </div>
+      
+         
+        </div>
+          
+</div>
+        </section>
+    </body>
+</html>

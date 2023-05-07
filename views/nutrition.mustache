@@ -1,0 +1,59 @@
+<html>
+    <head>  
+        {{>header}}
+        <script defer src="javascript/expandbox.js"></script>
+    </head>
+    <body>
+    <section class="gridcontainer">
+        <h1>{{title}}</h1>
+        <br></br>
+            {{>navigation}}
+        <div class="mainDiv">
+        <h1> Nutrition <img alt="logo" src="images/nutrition-protein-icon.png" class = "headingIcon"></h1>
+<div class ="textBox">
+As the saying goes; "You are what you eat". Good nutrition is important to a healthy lifestyle. Click the options below to find
+out more on how nutrition impacts your wellness goals.
+<br> </br>
+
+<div class = "window-container" id="window-container-1">
+  <button class="close-window">&times;</button>
+  <h1>Losing Weight <img alt="logo" src="images/weight-decrease-icon.png" class = "headingIcon"></h1>
+  <p>{{> information/losingweight}}</p>
+</div>
+
+<div class = "window-container" id="window-container-2">
+  <button class="close-window">&times;</button>
+  <h1>Gaining Muscle <img alt="logo" src="images/arm-muscles-icon.png" class = "headingIcon"></h1>
+  <p>{{> information/gainingmuscle}}</p>
+</div>
+
+<div class = "window-container" id="window-container-3">
+  <button class="close-window">&times;</button>
+  <h1>Eating Healthy <img alt="logo" src="images/public-health-icon.png" class = "headingIcon"></h1>
+  <p>{{> information/eatinghealthy}}</p>
+</div>
+
+<div class = "window-container" id="window-container-4">
+  <button class="close-window">&times;</button>
+  <h1>Supplements <img alt="logo" src="images/cluster-data-icon.png" class = "headingIcon"></h1>
+  <p>{{> information/supplements}}</p>
+</div>
+
+<a class="show-window" href="#window-container-1">Losing Weight <img alt="logo" src="images/weight-decrease-icon.png" class = "buttonIcon"></a>
+<a class="show-window" href="#window-container-2">Gaining Muscle <img alt="logo" src="images/arm-muscles-icon.png" class = "buttonIcon"></a>
+<a class="show-window" href="#window-container-3">Eating Healthy <img alt="logo" src="images/public-health-icon.png" class = "buttonIcon"></a>
+<a class="show-window" href="#window-container-4">Supplements <img alt="logo" src="images/cluster-data-icon.png" class = "buttonIcon"></a>
+
+
+</div>
+
+
+    </div>
+      
+         
+        </div>
+          
+</div>
+        </section>
+    </body>
+</html>

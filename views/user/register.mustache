@@ -1,0 +1,50 @@
+<html>
+<head>
+{{>header}}
+<script defer src="javascript/expandbox.js"></script>
+</head>
+<body>
+<section class="gridcontainer">
+<h1>{{title}}</h1>
+<br></br>
+            {{>navigation}}
+            <div class = profileDetails>
+            <img alt="logo" src="images/mainlogo.svg" id = "logo">
+<form method="post" action="/register">
+<div class="form-group">
+{{user-name-error}}
+<label for="username">User Name</label>
+<input type="text" name = "username" class="form-control" id="username" placeholder="Enter user name" required>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input type="password" name = "pass" class="form-control" id="pass" placeholder="Enter password" minlength="3" required>
+<br>
+Agree to Terms and Conditions <input type="checkbox" required>
+</div>
+<br>
+<div class = "termsandconditions">
+Click here to read our <a class="show-terms" href="#window-container-1"> Terms and Conditions </a>
+<br>
+Click here to read our <a class="show-terms" href="#window-container-2"> Data Protection Policy </a>
+</div>
+<div class="form-group">
+
+<div class = "window-container" id="window-container-1">
+  <a class="close-terms" href="#window-container-1"> Close </a>
+  <h1>Terms and Conditions</h1>
+  <p>{{> information/termsandconditions}}</p>
+</div>
+
+<div class = "window-container" id="window-container-2">
+  <a class="close-terms" href="#window-container-1"> Close </a>
+  <h1>Data Protection</h1>
+  <p>{{> information/dataprotection}}</p>
+</div>
+
+<br>
+<input type="submit" value="Register" class="accountButton">
+</form>
+</div>
+</section>
+</body>

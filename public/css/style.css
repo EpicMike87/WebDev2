@@ -1,0 +1,194 @@
+body {
+  font-family: Sans-serif;
+  color: #0B1B29;
+  font-size: 120%;
+  background-color: #F2FFEB;
+  }
+
+.gridcontainer{
+ display: grid;
+ grid-template-areas: "mainDiv navigationDiv";                         
+ grid-template-columns: 1fr 4fr;
+}
+
+.mainDiv{
+  background-color: #F2FFEB;
+  padding: 0.8em;
+  text-align: center;
+ }
+
+.navigationDiv{
+ background-color: #9ED962 ;
+  position: Sticky;
+  top: 140px;
+  text-align: center;
+  padding: 0.8em;
+}
+
+.logoTextDiv{
+  text-align: center;
+  color: #328B7B;
+  font-size: 300%;
+}
+
+.welcomeMessage{
+  text-align: center;
+  color: #328B7B;
+  font-size: 160%;
+}
+
+.navigationButton{
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 2px;
+  font-size: 160%;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+  background-color: #5DB7A1;
+  color: #0B1B29;
+  cursor: pointer;
+  width: 175px;
+  height: 45px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #0B1B29;
+}
+
+.addGoalButton{
+  display: inline-block;
+  padding: 8px;
+  margin: 2px;
+  font-size: 160%;
+  font-weight: bold;
+  text-align: centre;
+  text-decoration: none;
+  background-color: #5DB7A1;
+  color: #0B1B29;
+  cursor: pointer;
+  width: 175px;
+  height: 45px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #0B1B29;
+}
+.accountButton{
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 3px;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #5DB7A1;
+  color: #0B1B29;
+  cursor: pointer;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #0B1B29;
+}
+
+.navIcon{
+  float: right;
+  height: 40px;
+  width: 40px;	
+}
+
+.headingIcon{
+  height: 70px;
+  width: 70px;	
+}
+
+.buttonIcon{
+  text-align: right;
+  height: 30px;
+  width: 30px;	
+}
+
+.profileDetails{
+  text-align: center;
+}
+
+.profileIcon{
+  height: 150px;
+  width: 150px;	
+}
+
+.textBox{
+  background-color: #E9F3F0;
+  margin: 3px;
+  padding: 10px;
+  text-align: centre;
+}
+
+h1 {
+  font-size: 180%;
+  margin: auto;
+}
+
+.termsandconditions{
+  font-size: 90%;
+}
+
+.window-container {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2fr;
+  height: 1fr;
+  background-color: #E9F3F0;
+  border: 1px solid #5DB7A1;
+  padding: 20px;
+  z-index: 999;
+}
+
+.show-window {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5DB7A1;
+  color: #0B1B29;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 120%;
+  border-radius: 6px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #0B1B29;
+}
+
+.show-terms {
+  color: #5DB7A1;
+  font-weight: bold;
+}
+
+.close-window {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #ccc;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close-terms {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.card-body{
+  padding: 2px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #5DB7A1;
+}

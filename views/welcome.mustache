@@ -1,0 +1,44 @@
+<html>
+    <head>  
+        {{>header}}
+    </head>
+    <body>
+    <section class="gridcontainer">
+        <h1>{{title}}</h1>
+        <br></br>
+            {{>navigation}}
+        <div class="mainDiv">
+<div class ="logoTextDiv">
+<div class = "text" id="RedfieldName">
+Redfield Health
+</div>
+<img alt="logo" src="images/mainlogo.svg" id = "logo">
+<br>
+</div>
+<p class = "WelcomeMessage">
+<a href="&#x2F;about">About Us</a> </p>
+         <div>
+            {{^user}}
+            <a id="login" href="/register" class="accountButton">
+            Register
+            </a>
+            <a id="login" href="/login" class="accountButton">
+            Log In
+            </a>
+            {{/user}}
+            {{#user}}
+            <a id="logout" href="/loggedout" class="accountButton">
+            Log Out
+            </a>
+            {{/user}}
+            </div>  
+
+    </div>
+      
+         
+        </div>
+          
+</div>
+        </section>
+    </body>
+</html>

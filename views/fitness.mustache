@@ -1,0 +1,51 @@
+<html>
+    <head>  
+        {{>header}}
+        <script defer src="javascript/expandbox.js"></script>
+    </head>
+    <body>
+    <section class="gridcontainer">
+        <h1>{{title}}</h1>
+        <br></br>
+            {{>navigation}}
+        <div class="mainDiv">
+        <h1> Fitness <img alt="logo" src="images/smartwatch-heart-icon.png" class = "headingIcon"></h1>
+<div class ="textBox">
+Regular physical activity can improve your muscle strength and boost your endurance along with helping you lead a longer and healthier life. Click the options below to find
+out more on how fitness impacts your wellness goals.
+<br> </br>
+
+<div class = "window-container" id="window-container-1">
+  <button class="close-window">&times;</button>
+  <h1>Cardio <img alt="logo" src="images/heart-line-icon.png" class = "headingIcon"></h1>
+  <p>{{> information/cardio}}</p>
+</div>
+
+<div class = "window-container" id="window-container-2">
+  <button class="close-window">&times;</button>
+  <h1>Increasing Strength <img alt="logo" src="images/weightlifting-icon.png" class = "headingIcon"></h1>
+  <p>{{> information/increasestrength}}</p>
+</div>
+
+<div class = "window-container" id="window-container-3">
+  <button class="close-window">&times;</button>
+  <h1>Fitness Benefits<img alt="logo" src="images/math-plus-icon.png" class = "headingIcon"></h1>
+  <p>{{> information/benefitsfitness}}</p>
+</div>
+
+<a class="show-window" href="#window-container-1">Cardio <img alt="logo" src="images/heart-line-icon.png" class = "buttonIcon"></a>
+<a class="show-window" href="#window-container-2">Gaining Muscle <img alt="logo" src="images/weightlifting-icon.png" class = "buttonIcon"></a>
+<a class="show-window" href="#window-container-3">Fitness Benefits <img alt="logo" src="images/math-plus-icon.png" class = "buttonIcon"></a>
+
+</div>
+
+
+    </div>
+      
+         
+        </div>
+          
+</div>
+        </section>
+    </body>
+</html>
