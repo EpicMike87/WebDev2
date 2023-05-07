@@ -91,14 +91,12 @@ exports.show_login_page = function(req, res) {
 
 exports.handle_login = function (req, res) {
     res.render('loginsuccess', {
-        title: "Placeholder",
         user: req.user,      
     })
 }
 
 exports.handle_logout = function (req, res) {
     res.render('loggedout', {
-        title: "Placeholder",
         user: req.user
     })
     res
@@ -108,7 +106,5 @@ exports.handle_logout = function (req, res) {
 }
 
 exports.handle_register = function (req, res) {
-    res.render('registersuccess', {
-        title: "Placeholder",
-    })
+    res.render('registersuccess')
 }
